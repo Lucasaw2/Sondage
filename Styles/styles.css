@@ -1,0 +1,209 @@
+/*
+    Fichier CSS crée par Lucas ARNAUD--WOLLBRETT et Lukas PETERMANN dans le but d'un formulaire pour journée d'intégration
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*
+    Modification des paramètres "ALL" (*)
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*
+    Modification du Header de la pages principal
+*/
+header 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+    background: rgb(45, 45, 45);
+}
+header .titre
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color : rgb(25, 25, 25);
+}
+/*
+    Mise en forme de la page
+*/
+.section_menu
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333333;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#title
+{
+    position: absolute;
+    color: rgb(218, 218, 218);
+    white-space: nowrap;
+    font-size: 3vw;
+    z-index: 650;
+    padding-bottom: 335px;
+}
+#under-title
+{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    font-size: 2.5vw;
+    z-index: 600;
+    padding-bottom: 300px;
+}
+#pub-asci
+{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: small;
+    z-index: 10000;
+    padding-top: 700px;
+    padding-right: 1200px;
+}
+#pub-asci a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;    
+}
+/*
+    Modification du formulaire
+*/
+form 
+{
+    margin-top: 200px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 99999999;
+}
+form h1 
+{
+    font-size: 20px;
+}
+form .separation 
+{
+    width: 100%;
+    height: 1px;
+    background-color: #74c6df;
+}
+form .corps-formulaire 
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+form .corps-formulaire .groupe 
+{
+    position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corps-formulaire .gauche .groupe input 
+{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: #74c6df;
+    border-radius: 5px;
+}
+form .corps-formulaire .gauche .groupe i 
+{
+    position: absolute; /* positionné par rapport à son parent le plus proche positionné */
+    left: 0;
+    top: 25px;
+    padding: 15px 10px;
+    color: #74c6df;
+}
+form .corps-formulaire .droite 
+{
+    margin-left: 40px;
+}
+form .corps-formulaire .droite .groupe 
+{
+    height: 100%;
+}
+form .corps-formulaire .droite .groupe textarea 
+{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid #74c6df;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 72%;
+}
+form .pied-formulaire button 
+{
+    margin-top: 10px;
+    background-color: #74c6df;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+form .pied-formulaire button:hover
+{
+    transform: scale(1.05);
+}
+  
+@media screen and (max-width: 920px) 
+{
+    form .corps-formulaire .droite 
+    {
+      margin-left: 0px;
+    }
+}
+  
