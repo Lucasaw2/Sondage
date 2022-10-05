@@ -273,4 +273,5 @@ form .pied-formulaire button:hover
     text-align: center;
     position: absolute;
     padding-bottom: 15%;
+    font-weight: bold;
 }
