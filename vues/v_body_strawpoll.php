@@ -4,8 +4,8 @@
             <a href="https://asci-asso.fr/accueil-asci/" class="titre">ASCI-Sondage</a>
             <ul>
                 <li><a href="#">Menu</a></li>
-                <li><a href="#" class="active">BTS SIO 1</a></li>
-                <li><a href="#">BTS SIO 2</a></li>
+                <li><a href="#" class="active">Sondage</a></li>
+                <li><a href="#">Résultat</a></li>
             </ul>
         </header>
         <h1 id="title">Sondage journée d'intégration</h1>
