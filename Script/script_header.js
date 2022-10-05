@@ -4,7 +4,7 @@ function sondagehub()
     Sectionmenu = document.getElementsByClassName('section_menu')
     Sectionresult = document.getElementsByClassName('section_result')
 
-    if (Sectionsondage.style.display == 'none')
+    if (Sectionsondage.style.display === 'none')
         Sectionsondage.style.display = 'block',
         Sectionmenu.style.display = 'none',
         Sectionresult.style.display = 'none';
@@ -18,7 +18,7 @@ function menuhub()
     Sectionmenu = document.getElementsByClassName('section_menu')
     Sectionresult = document.getElementsByClassName('section_result')
 
-    if (Sectionmenu.style.display == 'none')
+    if (Sectionmenu.style.display === 'none')
         Sectionsondage.style.display = 'none',
         Sectionmenu.style.display = 'block',
         Sectionresult.style.display = 'none';
@@ -35,7 +35,7 @@ function resulthub()
     ButtonSondage = document.getElementsByClassName('sondage_button')
     ButtonResults = document.getElementsByClassName('result_button')
 
-    if (Sectionresult.style.display == 'none')
+    if (Sectionresult.style.display === 'none')
         Sectionsondage.style.display = 'none',
         Sectionmenu.style.display = 'none',
         Sectionresult.style.display = 'block';
