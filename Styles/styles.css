@@ -28,6 +28,7 @@ header
     align-items: center;
     z-index: 100000;
     background: rgb(45, 45, 45);
+    font-family: 'Poppins', sans-serif;
 }
 header .titre
 {
@@ -62,9 +63,16 @@ header ul li a.active
     color : rgb(25, 25, 25);
 }
 /*
-    Mise en forme de la page
+    On crée une ID "Hide" qui cachera les balises qui en sont équiper
 */
-.section_menu
+#hide
+ {
+    display: none;
+ }
+/*
+    Mise en forme de la page sondage
+*/
+.section_sondage
 {
     position: relative;
     width: 100%;
@@ -206,4 +214,21 @@ form .pied-formulaire button:hover
       margin-left: 0px;
     }
 }
-  
+
+/*
+    Modification de la page menu
+*/
+.section_sondage
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333333;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
