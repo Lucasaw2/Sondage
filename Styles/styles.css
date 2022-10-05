@@ -232,3 +232,43 @@ form .pied-formulaire button:hover
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+.section_home
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333333;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.horloge
+{
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.title_home
+{
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    padding-bottom: 25%;
+    z-index: 3;
+}
+
+.title-food
+{
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    padding-bottom: 15%;
+}

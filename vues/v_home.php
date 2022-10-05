@@ -12,7 +12,7 @@
         <div>
             
         </div>
-        <p class="title_food">Nombre de repas apporté:</p>
+        <p class="title_food">Nombre de repas apporté :</p>
         <p><script href="text/javascript" src="Script/script_horloge.js"></script></p>
         <link href="Sondage/styles.css">
     </section>
