@@ -2,9 +2,9 @@
     <header class="select">
         <a href="https://asci-asso.fr/accueil-asci/" class="titre">ASCI-Sondage</a>
         <ul>
-            <li><a href="#" class="menu_button" id="Active" onClick="menuhub()" >Menu</a></li>
-            <li><a href="#" class="sondage_button" id="none" onClick="sondagehub()">Sondage</a></li>
-            <li><a href="#" class="result_button" id="none" onClick="resulthub()">Résultat</a></li>
+            <li><a href="#" class="menu_button" id="active" onClick="menuhub()" >Menu</a></li>
+            <li><a href="#" class="sondage_button" onClick="sondagehub()">Sondage</a></li>
+            <li><a href="#" class="result_button" onClick="resulthub()">Résultat</a></li>
         </ul>
     </header>
     <section class="section_menu">
