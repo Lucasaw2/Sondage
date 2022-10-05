@@ -1,11 +1,18 @@
+CREATE TABLE classe(
+   Id_classe INT AUTO_INCREMENT,
+   nom VARCHAR(50),
+   PRIMARY KEY(Id_classe)
+);
+
 CREATE TABLE eleves(
    Id_eleves INT AUTO_INCREMENT,
    nom VARCHAR(50),
    prenom VARCHAR(50),
    mail VARCHAR(75),
    alergie VARCHAR(50),
-   classe VARCHAR(50),
-   PRIMARY KEY(Id_eleves)
+   Id_classe INT NOT NULL,
+   PRIMARY KEY(Id_eleves),
+   FOREIGN KEY(Id_classe) REFERENCES classe(Id_classe)
 );
 
 CREATE TABLE repas(
