@@ -13,7 +13,7 @@ DoCmd.RunSQL "CREATE TABLE repas(" & _
    "Id_plat COUNTER," & _
    "boisson VARCHAR(50)," & _
    "plat VARCHAR(50)," & _
-   "quantité INT," & _
+   "quantite INT," & _
    "Id_eleves INT NOT NULL," & _
    "PRIMARY KEY(Id_plat)," & _
    "FOREIGN KEY(Id_eleves) REFERENCES eleves(Id_eleves)" & _
