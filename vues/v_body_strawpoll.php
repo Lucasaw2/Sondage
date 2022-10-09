@@ -30,11 +30,16 @@
             <li><a href="#" class="result_button">Résultat</a></li>
         </ul>
     </header>
-    <section class="section_menu">
-        <h1 id="title">Vous êtes sur le menu</h1>
-        <p id="pub-asci"><em><a href="https://asci-asso.fr/accueil-asci/">Inscrivez vous à ASCI en cliquant  sur ce texte</a></em></p>
+    <section class="section_menu show">
+    <h1 class="title_home">Sondage pour la journée d'integration</h1>
+        <div>
+            
+        </div>
+        <p class="title_food">Nombre de repas apporté :</p>
+        <p><script href="text/javascript" src="Script/script_horloge.js"></script></p>
     </section>
-    <section class="section_sondage">
+    </section>
+    <section class="section_sondage hidden">
         <h1 id="title">Sondage journée d'intégration</h1>
         <form>
             <h1>Formulaire - Repas partagée</h1>

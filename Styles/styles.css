@@ -65,23 +65,22 @@ header ul li a#active
 /*
     On crée deux class qui affiche et cache se qui appeler par c'est deux class
 */
-    .hidden
-    {
-        display: none;
-    }
-    .show
-    {
-        display: block;
-    }
+section.hidden
+{
+    display: none;
+}
+section.show
+{
+    display:flex
+}
 /*
     Mise en forme de la page sondage
 */
-.section_sondage
+section.section_sondage
 {
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -222,12 +221,11 @@ form .pied-formulaire button:hover
 /*
     Modification de la page menu
 */
-.section_menu
+section.section_menu
 {
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
