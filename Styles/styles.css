@@ -63,12 +63,16 @@ header ul li a#active
     color : rgb(25, 25, 25);
 }
 /*
-    On crée une ID "Hide" qui cachera les balises qui en sont équiper
+    On crée deux class qui affiche et cache se qui appeler par c'est deux class
 */
-#hide
- {
-    display: none;
- }
+    .hidden
+    {
+        display: none;
+    }
+    .show
+    {
+        display: block;
+    }
 /*
     Mise en forme de la page sondage
 */
@@ -85,7 +89,6 @@ header ul li a#active
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     overflow-y: hidden;
-    display: none;
 }
 #title
 {
@@ -232,7 +235,6 @@ form .pied-formulaire button:hover
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     overflow-y: hidden;
-    display: block;
 }
 
 .section_home

@@ -1,10 +1,33 @@
 <body>
+<script type="text/javascript" src="Script/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    (function($) { "use strict";
+
+    // Affichage pages
+
+    $(document).ready(function(){
+        $('.menu_button').on('click', function(){
+            $('.section_menu').removeClass('hidden');
+            $('.section_sondage').removeClass('show');
+            $('.section_menu').addClass('show');
+            $('.section_sondage').addClass('hidden');
+        })
+        $('.sondage_button').on('click', function(){
+            $('.section_menu').removeClass('show');
+            $('.section_sondage').removeClass('hidden');
+            $('.section_menu').addClass('hidden');
+            $('.section_sondage').addClass('show');
+        })
+        $('.menu_button').trigger('mouseenter');
+    });
+   })(jQuery);
+</script>
     <header class="select">
         <a href="https://asci-asso.fr/accueil-asci/" class="titre">ASCI-Sondage</a>
         <ul>
-            <li><a href="#" class="menu_button" id="active" onClick="menuhub()" >Menu</a></li>
-            <li><a href="#" class="sondage_button" onClick="sondagehub()">Sondage</a></li>
-            <li><a href="#" class="result_button" onClick="resulthub()">Résultat</a></li>
+            <li><a href="#" class="menu_button" id="active">Menu</a></li>
+            <li><a href="#" class="sondage_button">Sondage</a></li>
+            <li><a href="#" class="result_button">Résultat</a></li>
         </ul>
     </header>
     <section class="section_menu">

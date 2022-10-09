@@ -1,44 +1,20 @@
-function sondagehub()
-{
-    Sectionsondage = document.getElementsByClassName('section_sondage')
-    Sectionmenu = document.getElementsByClassName('section_menu')
-    Sectionresult = document.getElementsByClassName('section_result')
+(function($) { "use strict";
 
-    if (Sectionsondage.style.display === 'none')
-        Sectionsondage.style.display = 'block',
-        Sectionmenu.style.display = 'none',
-        Sectionresult.style.display = 'none';
-    else
-        Sectionsondage.style.display = 'block';
-}
+    // Affichage pages
 
-function menuhub()
-{
-    Sectionsondage = document.getElementsByClassName('section_sondage')
-    Sectionmenu = document.getElementsByClassName('section_menu')
-    Sectionresult = document.getElementsByClassName('section_result')
-
-    if (Sectionmenu.style.display === 'none')
-        Sectionsondage.style.display = 'none',
-        Sectionmenu.style.display = 'block',
-        Sectionresult.style.display = 'none';
-    else
-        Sectionmenu.style.display = 'block';
-}
-
-function resulthub()
-{
-    Sectionsondage = document.getElementsByClassName('section_sondage')
-    Sectionmenu = document.getElementsByClassName('section_menu')
-    Sectionresult = document.getElementsByClassName('section_result')
-    Buttonhome = document.getElementsByClassName('menu_button')
-    ButtonSondage = document.getElementsByClassName('sondage_button')
-    ButtonResults = document.getElementsByClassName('result_button')
-
-    if (Sectionresult.style.display === 'none')
-        Sectionsondage.style.display = 'none',
-        Sectionmenu.style.display = 'none',
-        Sectionresult.style.display = 'block';
-    else
-        Sectionresult.style.display = 'block';
-}
+    $(document).ready(function(){
+        $('.menu_button').on('click', function(){
+            $('.section_menu').removeClass('hidden');
+            $('.section_sondage').removeClass('show');
+            $('.section_menu').addClass('show');
+            $('.section_sondage').addClass('hidden');
+        })
+        $('.sondage_button').on('click', function(){
+            $('.section_menu').removeClass('show');
+            $('.section_sondage').removeClass('hidden');
+            $('.section_menu').addClass('hidden');
+            $('.section_sondage').addClass('show');
+        })
+        $('.menu_button').trigger('mouseenter');
+    });
+})(jQuery);
