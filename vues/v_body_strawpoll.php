@@ -9,14 +9,26 @@
         $('.menu_button').on('click', function(){
             $('.section_menu').removeClass('hidden');
             $('.section_sondage').removeClass('show');
+            $('.section_result').removeClass('show');
             $('.section_menu').addClass('show');
             $('.section_sondage').addClass('hidden');
+            $('.section_result').addClass('hidden');
         })
         $('.sondage_button').on('click', function(){
             $('.section_menu').removeClass('show');
             $('.section_sondage').removeClass('hidden');
+            $('.section_result').removeClass('show');
             $('.section_menu').addClass('hidden');
             $('.section_sondage').addClass('show');
+            $('.section_result').addClass('hidden');
+        })
+        $('.result_button').on('click', function(){
+            $('.section_menu').removeClass('show');
+            $('.section_sondage').removeClass('show');
+            $('.section_result').removeClass('hidden');
+            $('.section_menu').addClass('hidden');
+            $('.section_sondage').addClass('hidden');
+            $('.section_result').addClass('show');
         })
         $('.menu_button').trigger('mouseenter');
     });
@@ -41,7 +53,7 @@
     </section>
     <section class="section_sondage hidden">
         <h1 id="title">Sondage journée d'intégration</h1>
-        <form>
+        <form method="POST" action="controller/verification.php">
             <h1>Formulaire - Repas partagée</h1>
             <div class="separation"></div>
             <div class="corps-formulaire">
@@ -69,5 +81,47 @@
             </div>
         </form>
         <p id="pub-asci"><em><a href="https://asci-asso.fr/accueil-asci/">Inscrivez vous à ASCI en cliquant  sur ce texte</a></em></p>
+    </section>
+    <section class="section_result hidden">
+    <h1 class="title_result">Résultat des sondage</h1>
+        <div>
+            
+        </div>
+        <div class="sio1">
+            <table>
+              <caption>BTS SIO1</caption>
+                <colgroup>
+                    <col style="width:200px">
+                    <col>
+                    <col>
+                </colgroup>
+                <tr><td>NOM Prénom</td><td>lukas.petermann@outlook.fr</td><td>plat rapporté</td><td>Qantité</td></tr>
+            </table>
+        </div>
+        <br>
+        <div class="sio2">
+            <table>
+              <caption>BTS SIO2</caption>
+                <colgroup>
+                    <col style="width:200px">
+                    <col>
+                    <col>
+                </colgroup>
+                <tr>
+                    <td>
+                        NOM Prénom
+                    </td>
+                    <td>
+                        lukas.petermann@outlook.fr
+                    </td>
+                    <td>
+                        plat rapporté
+                    </td>
+                    <td>
+                        Quantité
+                    </td>
+                </tr>
+            </table>
+        </div>
     </section>
 </body>
